@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * 时间工具类，Date和JDK8新增的LocalDate、LocalDateTime 的转换工具类
  */
-public abstract class DateUtils {
+public abstract class DateConvertUtils {
 
     public static Date toDate(@NotNull LocalDate localDate) {
         return Date.from(localDate.atStartOfDay().atZone(ZoneId.systemDefault()).toInstant());
